@@ -1,0 +1,62 @@
+<div class="contact">
+    <label class="name">CONTACT US</label>
+    <br><br><br><br><br><br><br>
+    <hr>
+
+    <div class="form1">
+        <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+
+            <label>
+            <span class="l1">Your Name:</span>
+            &nbsp;<input id="yourname" class="conname" type="text" formControlName="yourname" required>
+            <div *ngIf="yourname.invalid && (yourname.dirty || yourname.touched)">
+
+                <div *ngIf="yourname.errors.required">
+                    *name is required.
+                </div>
+                <div *ngIf="yourname.errors.minlength">
+                    *name must be at least 4 characters long.
+                </div>
+                <div *ngIf="yourname.errors.maxlength">
+                    *name cannot exceed 15 characters.
+                </div>
+                c
+                <div *ngIf="yourname.errors.numberValid">
+                    *name should not contain numbers.
+                </div>
+  
+            </div>
+      
+
+            </label>
+        
+            <label>
+
+            <span class="l1">Your Email:</span>
+            <input class="conmail" type="text" formControlName="youremail" required>
+                <div *ngIf="youremail.invalid && (youremail.dirty || youremail.touched)">
+
+                <div *ngIf="youremail.errors.required">
+                    *email is required.
+                </div>
+                </div>
+
+            </label>
+
+            <label class="cl1">
+                <span class="l1">Your Message:</span>
+                <textarea class="conmess"  formControlName="yourmessage">
+                </textarea>
+            </label>
+
+            <button type="submit" [disabled]="!profileForm.valid">Send</button>
+
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+</div>

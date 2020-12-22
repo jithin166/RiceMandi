@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: -8px;
+
+  }
+
+  .heading{
+    letter-spacing: 10px;
+    font-weight: bolder;
+    font-style: oblique;
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  
+  .topnav {
+    padding-bottom: 260px;
+    overflow: hidden;
+    background-color: yellow;
+    background-image: url('../../../assets/004_1024x.webp');
+    
+
+  }
+  
+
+  
+  .topnav button {
+    float: right;
+    color:#dfdfdf;
+    background-color: transparent;
+    font-weight: bold;
+    border: 0cm;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+    font-style: bold;
+    font-size: 17px;
+    margin-top: 240px;
+    outline: none;
+    border-color: transparent;
+    margin-left: -30px;
+
+  }
+  .topnav .b1{
+    padding-right: 20px;
+    padding-left: 20px;
+    
+  }
+  .topnav .b2{
+    padding-right: 25px;
+    padding-left: 25px;
+    
+  }
+  
+  .topnav .b3{
+    padding-right: 20px;
+    padding-left: 20px;
+    
+  }
+  
+  .topnav .b4{
+    padding-right: 20px;
+    padding-left: 20px;
+    
+  }
+  
+  .topnav .b5{
+    padding-right: 25px;
+    padding-left: 20px;
+    
+  }
+  
+
+  
+  .topnav button:hover {
+ 
+    color:whitesmoke;  
+  }
+
+  
+  .topnav button:active{
+ 
+    color:white;
+  }
+
+  .topnav button:focus{
+ 
+    color:white;
+  }
+
+
+  img{
+    margin-top: 50px;
+    height:80px;
+    width:80px;
+  }
+
+  .topnav .name{
+    margin-top: 60px;
+    height:70px;
+    width:200px;
+    margin-left: 20px;
+    padding-bottom: 30px;
+
+  }
+
+  .topnav a{
+    color: white;
+    float: right;
+    padding-right: 40px;
+    margin-top: 100px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+
+
+  
+
+  
+  
