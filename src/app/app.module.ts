@@ -15,10 +15,15 @@ import { BlogsComponent } from './blogs/blogs.component';
 import { NgImageSliderModule } from 'ng-image-slider';
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { FaqComponent } from './faq/faq.component';
 
 
 
 const routes: Routes = [
+  {
+    path:'faq',
+    component: FaqComponent
+  },
   {
     path:'home',
     component: HomeComponent
@@ -55,6 +60,7 @@ const routes: Routes = [
     ContactComponent,
     TestimonialsComponent,
     BlogsComponent,
+    FaqComponent,
 
   ],
   imports: [

@@ -1,0 +1,26 @@
+<div class="faqclass">
+    <br>
+    <u><h1>Frequently Asked Questions:</h1></u>
+    <hr>
+    <br>
+    <label class="l2">Questions:</label><button *ngIf="showAllset==false" class="l1" (click)="showAll()">Expand All</button><button *ngIf="showAllset" class="l1" (click)="showAll()">Collapse All</button>
+    <br>
+    <br>
+    <div class="block1">
+        
+            <ul *ngFor="let Q of Questions1">
+                <div class="panel1">
+                    <div class="panel2">
+                        <li class="q1"> {{Q.q}} 
+                            <button class="b1" (click)="toggleShown(false,Q.i)" *ngIf="Q.s">-</button>
+                            <button class="b1" (click)="toggleShown(true,Q.i)" *ngIf="Q.s==false">+</button>
+                        </li>
+                    </div>
+                    <li class="a1" *ngIf="Q.s"><hr class="hr2"> {{Q.a}}</li>
+                </div>
+            </ul>
+        
+    </div>
+
+    
+</div>
